@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+
+<script language="Javascript" src="Environment.js"></script>
+<script language="Javascript" src="ScrollHandler.js"></script>
+<script language="Javascript" src="ScrollThumb.js"></script>
+<script language="Javascript">
+
+function init()
+  {
+    var BLAH = "[start]a<br>ab<br>a<br>ab<br>ab<br>a<br>ab<br>a<br>ab<br>a<br>ab<br>ab<br>a<br>ab<br>abb<br>a<br>ab<br>a<br>ab<br>ab<br>a<br>ab<br>a<br>ab<br>a<br>ab<br>ab<br>a<br>ab<br>abb<br>a<br>ab<br>a<br>ab<br>ab<br>a<br>ab<br>a<br>ab<br>a<br>ab<br>ab<br>a<br>ab<br>abb<br>[fin]";
+
+	SCROLLER = new $ScrollHandler('SCROLLER',20,6);
+	SCROLLER.applyToImage(document.images['TESTER'],BLAH);
+	THUMB = new $ScrollThumb('THUMB');
+	THUMB.applyTo(SCROLLER);
+	//THUMB.bind();
+	//SCROLLER.repeat(10000,2000,'',20,6);
+
+	SCROLLER2 = new $ScrollHandler('SCROLLER2',20,6);
+	SCROLLER2.applyToLayer('TXT',300,18,483,128);  
+	THUMB2 = new $ScrollThumb('THUMB2');
+	THUMB2.applyTo(SCROLLER2);
+	THUMB2.bind();
+	SCROLLER2.repeat(10000,2000,'',20,1);
+
+	return;
+  }
+
+</script>
+
+<style>
+
+.SCROLLTEXT
+  {
+    position:absolute;
+  }
+  
+</style>
+
+</head>
+
+<body bgcolor=#f7f7f7 onload="init()" scroll=no>
+<pre>
+
+
+</pre>
+<table width=500 border=0><tr><td>
+<pre>
+
+
+
+</pre>
+</td></tr>
+<tr><td>
+<table width=300 cellpadding=6 cellspacing=0 border=0><tr><td width=100 valign=top>
+<img width="100" height="300" src="images/dummy.gif">
+
+</td><td valign=top><img ID="TESTER" NAME="TESTER" src="images/dummy.gif" width=300 height=200 STYLE="position:relative">
+</td></tr></table>
+</td></tr></table>
+
+
+<DIV ID="TXT" NAME="TXT" CLASS="SCROLLTEXT">
+
+<pre>
+
+
+
+
+
+
+
+</pre>
+
+<table width="480" cellpadding=0 cellspacing=4 border=0>
+<tr><td ID="THELIST" CLASS="TESTO" valign=top align=middle>
+Alessia Barbieri<br>
+Alessandro Raimondo<br>
+Alessandro Simoni<br>
+Andrea Guerrini<br>
+Anna Fezzardi<br>
+Anna Ragnoli<br>
+Arianna Santerini<br>
+Barbara Delai<br>
+Barbara Milanese<br>
+Barbara Tosi<br>
+Bruno Tominetti<br>
+Chiara Alduini<br>
+Claudia Salvemini<br>
+Claudia Battaglia<br>
+Claudio Mattaliano<br>
+Cristina Rizzato<br>
+Cristina Sergiacomi<br>
+Daniela Esposito<br>
+Diego Cadenelli<br>
+Elisa Guerrini<br>
+Fabio Candusso<br>
+Fabio Ghidelli<br>
+Flavio Franchini<br>
+Flavio Minari<br>
+Francesca Baruffaldi<br>
+Francesco Cangiano<br>
+Franco Roma<br>
+Giancarlo Morosini<br>
+Gianpietro Fogliazza<br>
+Giorgio Roselli<br>
+Giuseppe Zipponi<br>
+Grazia Bazzini<br>
+
+</td><td ID="THELIST2" CLASS="TESTO" valign=top align=middle>
+
+Guido Alboni<br>
+Isabella Nicelli<br>
+Karen Preisler<br>
+Lorenzo Galante<br>
+Lorenzo Longoni<br>
+Luca Archetti<br>
+Luca Faustini<br>
+Luca Manzo<br>
+Lucia Corti<br>
+Luisa Bettera<br>
+Luisa Facchini<br>
+Marco Roma<br>
+Marzia Nodari<br>
+Massimiliano Bartoli<br>
+Massimiliano Luci<br>
+Mauro Brambilla<br>
+Mauro Komatar<br>
+Monia Ferrari<br>
+Nicola Lanfranchi<br>
+Palma Boninsegna<br>
+Roberto Anastasi<br>
+Sabrina Leombruno<br>
+Silvia Ghidoni<br>
+Silvia Tedoldi<br>
+Stefano Fedrigo<br>
+Stefano Zini<br>
+Stefano Casella<br>
+Susanna Piccaluga<br>
+Valentina Ferrari<br>
+Vanessa Vincenzi<br>
+Vincenzo D'abbraccio<br>
+</td></tr></table>
+</DIV>
+
+</body>
+</html>
